@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-pixie-0_0_12.flake = false;
+  inputs.src-pixie-0_0_12.ref   = "refs/tags/0.0.12";
   inputs.src-pixie-0_0_12.owner = "treeform";
-  inputs.src-pixie-0_0_12.ref   = "0_0_12";
   inputs.src-pixie-0_0_12.repo  = "pixie";
   inputs.src-pixie-0_0_12.type  = "github";
   
