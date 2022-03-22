@@ -7,11 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-pixie-4_0_1.flake = false;
-  inputs.src-pixie-4_0_1.owner = "treeform";
-  inputs.src-pixie-4_0_1.ref   = "4_0_1";
-  inputs.src-pixie-4_0_1.repo  = "pixie";
-  inputs.src-pixie-4_0_1.type  = "github";
+  inputs.src-pixie-4_0_5.flake = false;
+  inputs.src-pixie-4_0_5.owner = "treeform";
+  inputs.src-pixie-4_0_5.ref   = "4_0_5";
+  inputs.src-pixie-4_0_5.repo  = "pixie";
+  inputs.src-pixie-4_0_5.type  = "github";
   
   inputs."vmath".owner = "nim-nix-pkgs";
   inputs."vmath".ref   = "master";
@@ -64,10 +64,10 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-pixie-4_0_1"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-pixie-4_0_5"];
   in lib.mkRefOutput {
     inherit self nixpkgs ;
-    src  = deps."src-pixie-4_0_1";
+    src  = deps."src-pixie-4_0_5";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   };
