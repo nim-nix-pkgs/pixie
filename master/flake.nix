@@ -11,6 +11,7 @@
   inputs.src-pixie-master.ref   = "refs/heads/master";
   inputs.src-pixie-master.owner = "treeform";
   inputs.src-pixie-master.repo  = "pixie";
+  inputs.src-pixie-master.dir   = "";
   inputs.src-pixie-master.type  = "github";
   
   inputs."vmath".owner = "nim-nix-pkgs";

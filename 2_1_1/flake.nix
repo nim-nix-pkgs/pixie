@@ -11,6 +11,7 @@
   inputs.src-pixie-2_1_1.ref   = "refs/tags/2.1.1";
   inputs.src-pixie-2_1_1.owner = "treeform";
   inputs.src-pixie-2_1_1.repo  = "pixie";
+  inputs.src-pixie-2_1_1.dir   = "";
   inputs.src-pixie-2_1_1.type  = "github";
   
   inputs."vmath".owner = "nim-nix-pkgs";
