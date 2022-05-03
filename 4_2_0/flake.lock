@@ -149,7 +149,7 @@
         "flatty": "flatty",
         "nimsimd": "nimsimd",
         "nixpkgs": "nixpkgs",
-        "src-pixie-master": "src-pixie-master",
+        "src-pixie-4_2_0": "src-pixie-4_2_0",
         "vmath": "vmath_2",
         "zippy": "zippy"
       }
@@ -222,7 +222,7 @@
         "type": "github"
       }
     },
-    "src-pixie-master": {
+    "src-pixie-4_2_0": {
       "flake": false,
       "locked": {
         "lastModified": 1651028458,
@@ -234,7 +234,7 @@
       },
       "original": {
         "owner": "treeform",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/4.2.0",
         "repo": "pixie",
         "type": "github"
       }
